@@ -1,6 +1,9 @@
-<header>
-    <img routerLink="/" src="../../assets/image/logo_white.png" alt="">
-    <div class="menu">
+<header [class.headerDark]="darkMode">
+
+    <img *ngIf="!darkMode" routerLink="/" src="../../assets/image/logo_white.png">
+    <img *ngIf="darkMode" routerLink="/" src="../../assets/image/logo_black.png">
+
+    <div [class.darkLinks]="darkMode">
         <a routerLink="/">Home</a>
         <a routerLink="/stories">Scary Stories</a>
         <a routerLink="/places">Haunted Places</a>

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'ravencroft';
+    src: url('./assets/font/ravenscroft/Ravenscroft.ttf');
+}
+
 body {
     margin: 0;
+    font-family: 'ravencroft';
+    letter-spacing: 2px;
 }
